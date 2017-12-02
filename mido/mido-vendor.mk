@@ -1103,7 +1103,6 @@ PRODUCT_PACKAGES += \
     qcnvitems \
     qcrilhook \
     qti-telephony-common \
-    telephony-ext \
     libts_detected_face_hal \
     libts_face_beautify_hal \
     qdcm_calib_data_nt35532_fhd_video_mode_dsi_panel \
