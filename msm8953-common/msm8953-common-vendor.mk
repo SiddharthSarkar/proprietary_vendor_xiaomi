@@ -16,7 +16,10 @@
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8953-common/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
+    vendor/xiaomi/msm8953-common/proprietary/bin/perfservice:system/bin/perfservice \
     vendor/xiaomi/msm8953-common/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
+    vendor/xiaomi/msm8953-common/proprietary/etc/init/perfservice.rc:system/etc/init/perfservice.rc \
+    vendor/xiaomi/msm8953-common/proprietary/etc/perf/whitelistedapps.xml:system/etc/perf/whitelistedapps.xml \
     vendor/xiaomi/msm8953-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/msm8953-common/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/xiaomi/msm8953-common/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
@@ -262,6 +265,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd.so \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-util.so \
@@ -442,6 +449,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib64/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csi.so \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib64/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_encdec.so \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
+    vendor/xiaomi/msm8953-common/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib64/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd.so \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib64/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-util.so \
@@ -512,6 +523,8 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     QtiTelephonyService \
     ims \
+    QPerformance \
+    UxPerformance \
     CNEService \
     qcrilmsgtunnel \
     TimeService
